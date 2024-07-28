@@ -9,7 +9,6 @@ body {
   max-width: 600px;
 }
 
-
 h1 {
   font-weight: 800;
   font-size: 46px;
@@ -54,9 +53,9 @@ form {
 .recipe {
   font-size: 16px;
   background-color: white;
-  padding: 30px;
+  padding: 90px;
   border-radius: 10px;
-  line-height: 300px;
+  line-height: 20px;
   border-left: 10px solid #ffcb00;
 }
 
