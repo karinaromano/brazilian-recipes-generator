@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <link rel="shortcut icon" href="images/favicon.ico" />
+
     <title>Brazilian ChefBot</title>
   </head>
   <body>
@@ -13,7 +15,7 @@
         <h1>Brazilian ChefBot</h1>
       </header>
       <main>
-        <form>
+        <form id="recipe-generator-form">
           <input
             type="text"
             placeholder="🍽️ Enter the ingredients you have at home: "
@@ -24,7 +26,7 @@
           />
           <input type="submit" class="submit-button" value="submit" />
         </form>
-        <div class="recipe">The recipes will go here</div>
+        <div class="recipe" id="recipe"></div>
       </main>
       <footer>
         This AI Project was coded by 👩🏻‍💻

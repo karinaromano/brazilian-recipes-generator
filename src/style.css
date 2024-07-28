@@ -9,8 +9,6 @@ body {
   max-width: 600px;
 }
 
-header {
-}
 
 h1 {
   font-weight: 800;
@@ -26,7 +24,6 @@ main {
 
 form {
   padding: 20px;
-
   background-color: #ffcb00;
   border-radius: 10px;
   display: flex;
@@ -72,4 +69,3 @@ a {
   color: #ffcb00;
   text-decoration: none;
 }
-
