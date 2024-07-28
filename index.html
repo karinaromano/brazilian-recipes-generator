@@ -8,36 +8,40 @@
     <title>Brazilian ChefBot</title>
   </head>
   <body>
-    <header>
-      <h1>Brazilian ChefBot</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the ingredients you have at home: "
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" value="submit" />
-      </form>
-      <div>The recipes will go here</div>
-    </main>
-    <footer>
-      This AI Project was coded by 👩🏻‍💻
-      <a href="https://www.linkedin.com/in/karinaromano" target="_blank">
-        Karina Romano</a
-      >
-      and is open-sourced on
-      <a
-        href="https://github.com/karinaromano/brazilian-recipes-generator"
-        target="_blank"
-        >Github</a
-      >
-      and is hosted on
-      <a href="https://ai-brazilian-chef.netlify.app/">Netlifly</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Brazilian ChefBot</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="🍽️ Enter the ingredients you have at home: "
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" value="submit" />
+        </form>
+        <div class="recipe">The recipes will go here</div>
+      </main>
+      <footer>
+        This AI Project was coded by 👩🏻‍💻
+        <a href="https://www.linkedin.com/in/karinaromano" target="_blank">
+          Karina Romano</a
+        >
+        <br />
+        and is open-sourced on
+        <a
+          href="https://github.com/karinaromano/brazilian-recipes-generator"
+          target="_blank"
+          >Github</a
+        >
+        and is hosted on
+        <a href="https://ai-brazilian-chef.netlify.app/">Netlifly</a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
