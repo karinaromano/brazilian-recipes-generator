@@ -53,10 +53,11 @@ form {
 .recipe {
   font-size: 16px;
   background-color: white;
-  padding: 90px;
+  padding: 40px;
   border-radius: 10px;
-  line-height: 20px;
+  line-height: 2;
   border-left: 10px solid #ffcb00;
+  text-align: left;
 }
 
 footer {
