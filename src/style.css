@@ -72,6 +72,10 @@ form {
   display: none;
 }
 
+.song {
+  color: #ffcb00;
+}
+
 footer {
   font-family: monospace;
   font-size: 10px;
