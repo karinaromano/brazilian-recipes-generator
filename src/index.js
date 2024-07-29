@@ -1,5 +1,5 @@
 function displayRecipe(response) {
-  console.log("recipe generated");
+ // console.log("recipe generated");
   new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -21,9 +21,13 @@ function generateRecipe(event) {
     "You are a Brazilian Chef, and love to teach others how to make delicious brazilian dishes using cheap ingredients. Your mission is to generate a brazilian recipe, with 1º: showing the ingredientes; 2º show the instructions teaching how to cook it and 3º calculating how much it would cost to make the recipe in the UK considering the prices of the current date. To format details, generate each step as in HTML and separate each line with a <br/>. Show the name of the recipe as a <h3>,  and the total cost as <h4>. Sign the end of the recipe with 'Enjoy your meal! 👩🏽‍🍳 Brazilian ChefBot' inside a <strong> element, all the text must be displayed to the left of the page";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating recipes");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="generating">⌛ Generating a brazilian recipe with ${instructionsInput.value}</div>`;
+
+ // console.log("generating recipes");
+ // console.log(`Prompt: ${prompt}`);
+ // console.log(`Context: ${context}`);
 
   axios.get(apiUrl).then(displayRecipe);
 

@@ -13,13 +13,14 @@
   <body>
     <div class="container">
       <header>
-        <h1>Brazilian ChefBot</h1>
+        <h1><img src="images/Logo.png" class="image"> <br />Brazilian ChefBot</h1>
       </header>
       <main>
+        <div class="form-container">
         <form id="recipe-generator-form">
           <input
             type="text"
-            placeholder="🍽️ Enter the ingredients you have at home: "
+            placeholder="🍽️ Enter the ingredients you have at home: i.e: cocoa "
             autofocus
             required
             autocomplete="off"
@@ -28,7 +29,7 @@
           />
           <input type="submit" class="submit-button" value="submit" />
         </form>
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
       <footer>
         This AI Project was coded by 👩🏻‍💻
@@ -46,6 +47,7 @@
         <a href="https://ai-brazilian-chef.netlify.app/">Netlifly</a>
       </footer>
     </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
